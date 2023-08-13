@@ -5,6 +5,10 @@
         <div class="card-header header-h">
             <h4>Registered Users
         </div>
+        <div class="card-header">
+            <a href="{{ url('add-user')}}" class="btn" style="color:white; background-color:lightblue">
+            <i class="material-icons">add</i> Add</a>
+        </div>
         <div class="card-body">
             <table class="table table-bordered table-striped">
                 <thead>
