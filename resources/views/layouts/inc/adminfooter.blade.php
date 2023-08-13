@@ -8,8 +8,8 @@
                 </a>
               </li>
               <li>
-                <a href="https://www.youtube.com/watch?v=wLt5RyMtqVc">
-                  Loving at Bracu?
+                <a href="https://www.youtube.com/watch?v=R0JKCYZ8hng">
+                  Loving at SoundTrove?
                 </a>
               </li>
               <li>
@@ -26,7 +26,7 @@
           </nav>
           <div class="copyright float-right" id="date">
             Developed by
-            <a href="https://www.linkedin.com/in/kazi-md-al-wakil-60314a193/" target="_blank">Kazi Md. Al-Wakil</a>
+            <a target="_blank">SoundTrove</a>
           </div>
         </div>
       </footer>
