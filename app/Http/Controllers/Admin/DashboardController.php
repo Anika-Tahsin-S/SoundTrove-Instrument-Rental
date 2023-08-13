@@ -15,6 +15,7 @@ class DashboardController extends Controller
         $users=User::all();
         return view('admin.users.index',compact('users'));
     }
+    
     public function users_view($id)
     {
         $users = User::find($id);
@@ -26,5 +27,11 @@ class DashboardController extends Controller
         $users -> delete();
         return redirect('/dashboard')->with('status', 'User Successfully Banned');
     }
-
+    // attempt to add USER 
+    public function users_add()
+    {
+        $users = User::all();
+        return view('admin.users.add',compact('users'));
+    }
+    // 
 }
