@@ -25,4 +25,15 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    /** admin-user profile section */
+    public function userProfile()
+    {
+        return view('admin-user');
+    }
+
+    // public function index()
+    // {
+    //     $orders = Order::where('user_id', Auth::id())->get();
+    //     return view('frontend.orders.index',compact('orders'));
+    // }
 }
