@@ -23,6 +23,15 @@
                     <p>Users</p>
                 </a>
             </li>
+            <!-- attempt to ADD USER -->
+            <li class="nav-item {{ Request::is('add-user')|Request::is('user-add') ? 'active':'' }}">
+                <a class="nav-link" href="{{ url('add-user')}}">
+                    <i class="material-icons">create_new_folder</i>
+                    <p>Add User</p>
+                </a>
+            </li>
+
+
             <li class="nav-item {{ Request::is('categories')|Request::is('category-add') ? 'active':'' }}">
                 <a class="nav-link" href="{{ url('categories')}}">
                     <i class="material-icons">category</i>
