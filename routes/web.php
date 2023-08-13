@@ -73,6 +73,7 @@ Route::middleware('auth')->group(function () {
     Route::post('add-review',[ReviewController::class,'create']);
     Route::put('update-review', [ReviewController::class,'update'] );
 
+
     // Route::get('cardpay',[StripeController::class, 'call']);
 });
 
@@ -113,3 +114,8 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('delete-users/{users:id}', [DashboardController::class, 'delUser']);//
 
 });//
+
+
+Route::controller(App\Http\Controllers\HomeController::class)->group(function () {
+    Route::get('/admin-user', 'userProfile')->middleware('auth')->name('admin-user');
+});
