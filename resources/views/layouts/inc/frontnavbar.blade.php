@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="{{  url('/') }}">Rent @ BRACU</a>
+        <a class="navbar-brand" href="{{  url('/') }}">SoundTrove</a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <form class="d-flex ms-auto" action="{{url('searchproduct')}}" role="search"method='POST'>
                 @csrf
@@ -43,7 +43,7 @@
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ url('/admin-user') }}">
+                        <a class="dropdown-item" href="{{ url('admin-user') }}">
                             My Profile
                         </a>
                         <a class="dropdown-item" href="{{ url('my-orders') }}">
