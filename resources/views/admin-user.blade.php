@@ -1,10 +1,13 @@
-@extends('layouts.app')
+@extends('layouts.front')
 @section('title')
     My Profile
 @endsection
 
 <!-- navbar  -->
 @section('content')
+
+
+
 
 <div class="page-wrapper">
     <div class="content container-fluid">
@@ -66,10 +69,6 @@
                                         <div class="row">
                                             <p class="col-sm-3 text-muted text-sm-end mb-0 mb-sm-3">Name</p>
                                             <p class="col-sm-9">{{ Session::get('name') }}</p>
-                                        </div>
-                                        <div class="row">
-                                            <p class="col-sm-3 text-muted text-sm-end mb-0 mb-sm-3">Date of Birth</p>
-                                            <p class="col-sm-9">24 Jul 1983</p>
                                         </div>
                                         <div class="row">
                                             <p class="col-sm-3 text-muted text-sm-end mb-0 mb-sm-3">Email</p>
