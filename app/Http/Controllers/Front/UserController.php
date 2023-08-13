@@ -19,4 +19,20 @@ class UserController extends Controller
         $orders = Order::where('id',$id)->where('user_id',Auth::id())->first();
         return view('frontend.orders.view',compact('orders'));
     }
+    
+    // attempt to add use function
+    public function add()
+    {
+        return view('admin.users.add');
+    }
+    public function insert(Request $request)
+    {
+        $user = new User();
+        $user->name = $request->input('Name');
+        $user->email = $request->input('Email');
+        $user->phone = $request->input('Contact No.');
+        $user->status = $request->input('status') == True ? '1' : '0';
+        $user->save();
+        return redirect('/dashboard')->with('status', 'User sucessfully added');
+    }//
 }
