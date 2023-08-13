@@ -119,3 +119,7 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
 Route::controller(App\Http\Controllers\HomeController::class)->group(function () {
     Route::get('/admin-user', 'userProfile')->middleware('auth')->name('admin-user');
 });
+
+Route::controller(App\Http\Controllers\Front\UserController::class)->group(function () {
+    Route::get('/add-user', 'add')->middleware('auth')->name('add-user');
+});
