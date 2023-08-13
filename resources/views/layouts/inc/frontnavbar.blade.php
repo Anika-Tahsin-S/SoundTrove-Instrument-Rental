@@ -24,6 +24,7 @@
                         <span class="badge badge-pill bg-success wish-count">0</span>
                     </a>
                 </li>
+<!-- dropdown parts -->
                 @guest
                 @if (Route::has('login'))
                 <li class="nav-item">
