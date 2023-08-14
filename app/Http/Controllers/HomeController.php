@@ -28,12 +28,14 @@ class HomeController extends Controller
     /** admin-user profile section */
     public function userProfile()
     {
+        // $users = User::find($id);
         return view('admin-user');
     }
 
-    // public function index()
+    // public function profile_view($id)
     // {
-    //     $orders = Order::where('user_id', Auth::id())->get();
-    //     return view('frontend.orders.index',compact('orders'));
+    //     $users = User::where('id',$id)->where('user_id',Auth::id())->first();
+    //     return view('admin-user',compact('users'));
     // }
+
 }
