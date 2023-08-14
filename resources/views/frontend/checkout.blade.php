@@ -82,7 +82,7 @@
                             <hr>
                             <h6>Total Price: <strong>Tk. {{ $total }}</strong></h6>
                             <button type="submit" class="btn btn-primary bg-success w-100">Place Rent Request | Cash on Rent</button>
-                            <button type ='submit'class="btn btn-primary bg-danger w-100 mt-3 razorpay-btn">Pay With Bkash</button>
+                            <button type ='submit'class="btn btn-primary bg-danger w-100 mt-3">Pay With Bkash</button>
                         </div>
                     </div>
                 </div>
