@@ -73,7 +73,6 @@ Route::middleware('auth')->group(function () {
     Route::post('add-review',[ReviewController::class,'create']);
     Route::put('update-review', [ReviewController::class,'update'] );
 
-
     // Route::get('cardpay',[StripeController::class, 'call']);
 });
 
@@ -120,6 +119,9 @@ Route::controller(App\Http\Controllers\HomeController::class)->group(function ()
     Route::get('/admin-user', 'userProfile')->middleware('auth')->name('admin-user');
 });
 
-Route::controller(App\Http\Controllers\Front\UserController::class)->group(function () {
-    Route::get('/add-user', 'add')->middleware('auth')->name('add-user');
-});
+
+// Route::controller(App\Http\Controllers\Front\UserController::class)->group(function () {
+//     Route::get('/add-user', 'add')->middleware('auth', 'isAdmin')->name('add-user');
+//     Route::post('/insert-user', 'insert')->middleware('auth', 'isAdmin')->name('insert-user');
+
+// });
