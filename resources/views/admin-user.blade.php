@@ -6,11 +6,14 @@
 <!-- navbar  -->
 @section('content')
 <div class="page-wrapper">
-    <div class="content container-fluid">
+    <div class="content container">
         <div class="page-header">
             <div class="row">
                 <div class="col">
-                    <h3 class="page-title">Profile</h3>
+                    <h3>
+                        <div class="p-3 mb-2 bg-secondary bg-gradient text-white">Profile</div>
+                        
+                    </h3>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="{{ url('/')}}">Dashboard</a></li>
                         <li class="breadcrumb-item active">Profile</li>
@@ -30,12 +33,20 @@
                         </div>
                         <div class="col ms-md-n2 profile-user-info">
                             <h4 class="user-name mb-0">{{ Session::get('name') }}</h4>
-                            <!-- <h6 class="text-muted">{{ Session::get('position') }}</h6> -->
-                            <!-- <div class="user-Location"><i class="fas fa-map-marker-alt"></i> Combodai Phnom Penh</div>
-                            <div class="about-text">Lorem ipsum dolor sit amet.</div> -->
+                            
                         </div>
+                        <style>
+                            .btn-light-purple {
+                                background-color: #adb5bd   ; /* Light purple color */
+                                color: white; /* Text color */
+                                /* You can add more styles here, like border, hover effects, etc. */
+                            }
+                        </style>
+
                         <div class="col-auto profile-btn">
-                            <a href="" class="btn btn-primary">Edit</a>
+                            <a href="" class="btn btn-light-purple">Edit</a>
+                            <a href="{{ url('/') }}" class="btn btn-light-purple">Back</a>
+
                         </div>
                     </div>
                 </div>
@@ -55,35 +66,24 @@
                         <div class="row">
                             <div class="col-lg-9">
                                 <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title d-flex justify-content-between">
-                                            <span>Personal Details</span>
-                                            <a class="edit-link" data-bs-toggle="modal"
-                                                href="#edit_personal_details"><i
-                                                    class="far fa-edit me-1"></i>Edit</a>
-                                        </h5>
-                                        <div class="row">
-                                            <p class="col-sm-3 text-muted text-sm-end mb-0 mb-sm-3">Name</p>
-                                            <p class="col-sm-9">{{ Session::get('name') }}</p>
+                                    <div class="card-header header-h">
+                                        <h4>Personal Details</h4>
+                                    </div>
+
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-4 mt-3">
+                                            <label for="">Name</label>
+                                            <div class="p-2 border">{{Auth::user()->name}}</div>
                                         </div>
-                                        <div class="row">
-                                            <p class="col-sm-3 text-muted text-sm-end mb-0 mb-sm-3">Email</p>
-                                            <p class="col-sm-9"><a href="/cdn-cgi/l/email-protection"
-                                                    class="__cf_email__"
-                                                    data-cfemail="a1cbcec9cfc5cec4e1c4d9c0ccd1cdc48fc2cecc">{{ Session::get('email') }}</a>
-                                            </p>
+                                        <div class="col-md-4 mt-3">
+                                            <label for="">Email</label>
+                                            <div class="p-2 border">{{Auth::user()->email}}</div>
                                         </div>
-                                        <div class="row">
-                                            <p class="col-sm-3 text-muted text-sm-end mb-0 mb-sm-3">Mobile</p>
-                                            <p class="col-sm-9">{{ Session::get('phone_number') }}</p>
-                                        </div>
-                                        <div class="row">
-                                            <p class="col-sm-3 text-muted text-sm-end mb-0">Address</p>
-                                            <p class="col-sm-9 mb-0">4663 Agriculture Lane,<br>
-                                                Miami,<br>
-                                                Florida - 33165,<br>
-                                                United States.</p>
-                                        </div>
+                                        
+
+
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -93,9 +93,23 @@
                                     <div class="card-body">
                                         <h5 class="card-title d-flex justify-content-between">
                                             <span>Account Status</span>
-                                            <a class="edit-link" href="#"><i class="far fa-edit me-1"></i>Edit</a>
                                         </h5>
-                                        <button class="btn btn-success" type="button"><i class="fe fe-check-verified"></i> Active</button>
+                                        <!-- <button class="btn btn-success" type="button"><i class="fe fe-check-verified"></i> Active</button> -->
+                                        <style>
+                                            .profile-btn {
+                                                margin-bottom: 5px; /* Adjust the spacing as needed */
+                                            }
+                                        </style>
+
+                                        <div class="row align-items-center">
+                                            <div class="col-auto profile-btn">
+                                                <a href="{{ url('cart') }}" class="btn btn-info">Cart</a>
+                                            </div>
+                                            
+                                            <div class="col-auto profile-btn">
+                                                <a href="{{ url('wishlist') }}" class="btn btn-info">wishlist</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
