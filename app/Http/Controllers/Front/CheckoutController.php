@@ -43,7 +43,7 @@ class CheckoutController extends Controller
         }
         $order->total = $total;
 
-        $order->track_no = 'Ikaz' . rand(1111, 9999);
+        $order->track_no = 'Troves' . rand(1111, 9999);
         $order->save();
 
         $cart_items = Cart::where('user_id', Auth::id())->get();
