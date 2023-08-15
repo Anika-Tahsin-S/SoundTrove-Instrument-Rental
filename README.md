@@ -1,10 +1,8 @@
-<p align="center">https://imgur.com/ebC14de
+<p align="center">
 ![SoundTrove Logo](https://i.imgur.com/d0zoM0S.png)
 </p>
 
-<p align="center">Jira Backlog
-<a href="https://soundtrove.atlassian.net/jira/software/projects/SOUN/boards/1/backlog?epics=visible"></a>
->>>>>>> 06e30e3b6dfa0c4bf91e3cac9b8c2720b08f990b
+<p align="center">
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
