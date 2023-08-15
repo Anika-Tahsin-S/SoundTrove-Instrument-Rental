@@ -1,4 +1,4 @@
-<p align="center">![Home](./public/documentation/SoundTrove.png)</a></p>
+<p align="center">![Home](./documentation/SoundTrove.png)</a></p>
 
 
 <p align="center">
