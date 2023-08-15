@@ -4,7 +4,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <form class="d-flex ms-auto" action="{{url('searchproduct')}}" role="search"method='POST'>
                 @csrf
-                <input class="form-control me-2" name="product_name" id="search_product" type="search" placeholder="Search" aria-label="Search">
+                <!-- <input class="form-control me-2" name="product_name" id="search_product" type="search" placeholder="Search Product" aria-label="Search">
+                <input class="form-control me-2" name="category_name" id="search_category" type="search" placeholder="Search Category" aria-label="Search Category"> -->
+                <input class="form-control me-2" name="search_term" id="search_term" type="search" placeholder="Search for Product or Category" aria-label="Search" style="width: 300px;">
+
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
