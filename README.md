@@ -1,11 +1,7 @@
 <p align="center">![Home](./documentation/SoundTrove.png)</a></p>
-<<<<<<< HEAD
-=======
 
->>>>>>> 0b71671954cb2a6c4dba076efdb3ada699421bb8
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<p align="center">Jira Backlog
+<a href="https://soundtrove.atlassian.net/jira/software/projects/SOUN/boards/1/backlog?epics=visible"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
