@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-=======
-<p align="center">![Home](./documentation/SoundTrove.png)</a></p>
+<p align="center">https://imgur.com/ebC14de
+![SoundTrove Logo](https://i.imgur.com/d0zoM0S.png)
+</p>
 
 <p align="center">Jira Backlog
 <a href="https://soundtrove.atlassian.net/jira/software/projects/SOUN/boards/1/backlog?epics=visible"></a>
