@@ -78,18 +78,26 @@ class FrontendController extends Controller
     }
     public function search(Request $request)
     {
-        $searched_product = $request->product_name;
-        if($searched_product){
-            $product = Product::where("name","LIKE","%$searched_product%")->first();
-            if($product){
-                return redirect('category/'.$product->category->custom_url.'/'.$product->custom_url);
+        $search_term = $request->search_term;
+
+        if ($search_term) {
+            // Search for a product
+            $product = Product::where("name", "LIKE", "%$search_term%")->first();
+            if ($product) {
+                return redirect('category/' . $product->category->custom_url . '/' . $product->custom_url);
             }
-            else{
-                return redirect()->back()->with('status','No Such Product Exists');
+
+            // Search for a category
+            $category = Category::where("name", "LIKE", "%$search_term%")->first();
+            if ($category) {
+                return redirect('category/' . $category->custom_url);
             }
-        }
-        else{
+
+            // No matching product or category found
+            return redirect()->back()->with('status', 'No Matching Product or Category Found');
+        } else {
             return redirect()->back();
         }
     }
+
 }
