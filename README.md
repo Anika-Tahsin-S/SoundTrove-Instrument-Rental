@@ -1,4 +1,5 @@
-<p align="center">![SoundTrove](https://imgur.com/ZmAMjgp)</a></p>
+<p align="center">![Home](./public/documentation/SoundTrove.png)</a></p>
+
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
