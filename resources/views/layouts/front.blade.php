@@ -90,6 +90,9 @@
             $("#search_product").autocomplete({
                 source: availableTags
             });
+            $("#search_category").autocomplete({
+                source: availableTags
+            });
         }
     </script>
     {{-- Auto-Complete Script End --}}
