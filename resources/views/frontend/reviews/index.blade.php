@@ -18,14 +18,14 @@
                                 <button type="submit" class='btn btn-primary mt-2'>Submit</button>
                             </form>
                         @else
-                            <div class="alert alert-danger">
-                                <h5>You Are not Eligible to Review thius product</h5>
+                            <div class="alert alert-danger" style="background-color:#CCCCFF">
+                                <h5>You Are not Eligible to Review this product</h5>
                                 <p>
                                     For more Accurate information and Reviews,
                                     Only users who bought before can Review!!
                                 </p>
                             </div>
-                            <a href="{{ url('/') }}"class='btn btn-primary mt-2 float-end'>Go to Home Page</a>
+                            <a href="{{ url('/') }}"class='btn btn-info mt-2 float-end'>Go to Home Page</a>
                         @endif
 
                     </div>
