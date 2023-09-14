@@ -1,5 +1,5 @@
 <p align="center">
-# <bold>SoundTrove</bold>
+<bold> SoundTrove </bold>
 </p>
 
 ## About SoundTrove
