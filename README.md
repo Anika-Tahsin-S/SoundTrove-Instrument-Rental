@@ -1,4 +1,4 @@
-# ** SoundTrove **
+# SoundTrove
 
 ## About SoundTrove
 
