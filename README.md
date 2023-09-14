@@ -1,7 +1,5 @@
 # SoundTrove
 
-## About SoundTrove
-
 This web service will bring music enthusiasts and musical instrument sellers together on one platform. Instrument sellers can enlist their items and find people to rent their products. Music enthusiasts can rent instruments for a certain period of time. Gain access to expensive instruments which are rarely available.
 
 
