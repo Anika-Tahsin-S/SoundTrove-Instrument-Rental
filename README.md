@@ -1,9 +1,6 @@
 <p align="center">
-![SoundTrove Logo](https://i.imgur.com/d0zoM0S.png)
+SoundTrove Logo
 </p>
-
-<p align="center">
-<a href="https://soundtrove.atlassian.net/jira/software/projects/SOUND/boards/1/backlog?epics=visible">Atlassian Jira Board</a></p>
 
 ## About SoundTrove
 
