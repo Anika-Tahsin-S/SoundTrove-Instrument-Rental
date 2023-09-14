@@ -1,6 +1,4 @@
-<p align="center">
-<bold> SoundTrove </bold>
-</p>
+# ** SoundTrove **
 
 ## About SoundTrove
 
